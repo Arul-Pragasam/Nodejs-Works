@@ -23,7 +23,7 @@ res.send(`${name} not found`)
 })
 app.post('/adddata', (req,res) =>{
     cse_data.push(req.body)
-    res.send('added successfully')
+    res.send('Added successfully')
 })
 
 app.put('/update', (req,res) =>{
@@ -34,7 +34,7 @@ app.put('/update', (req,res) =>{
             element.year_of_joining = req.body.year_of_joining
             element.year_of_passing = req.body.year_of_passing
             element.cgpa = req.body.cgpa
-            res.send('updated successfully')
+            res.send('Updated successfully')
         }
     })
     res.send(`${name} not found`)
@@ -43,5 +43,3 @@ app.put('/update', (req,res) =>{
 app.listen(5000, () => {
     console.log('Server listening on 5000');
 })
-
-
